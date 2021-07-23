@@ -90,30 +90,3 @@ a {
     color: $bold-text-color;
     font-weight: bold;
 }
-
-// Global Classes
-.logo {
-    @include flex(row, space-between, flex-end);
-    @include size(7%, 70%);
-    min-width: 40px;
-    .rect1 {
-        background: $theme-color1;
-        @include size(30%, 50%);
-        max-height: 15px;
-        min-width: 15px;
-        border-radius: 50%;
-    }
-    .rect2 {
-        border-radius: 10px;
-        background: $theme-color2;
-        @include size(30%, 70%);
-        min-height: 25px;
-        min-width: 15px;
-    }
-}
-.button {
-    @include flex(row, space-evenly, center);
-    @include minSize(10rem, 3rem);
-    border-radius: 50px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}

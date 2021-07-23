@@ -1,0 +1,64 @@
+// Global Classes
+.logo {
+    @include flex(row, space-between, flex-end);
+    @include size(7%, 70%);
+    min-width: 40px;
+    max-width: 25px;
+    .rect1 {
+        background: $theme-color1;
+        @include size(30%, 50%);
+        max-height: 15px;
+        @include minSize(15px, 15px);
+        border-radius: 50%;
+    }
+    .rect2 {
+        border-radius: 10px;
+        background: $theme-color2;
+        @include size(30%, 55%);
+        @include minSize(15px, 23px);
+    }
+}
+
+.button {
+    @include flex(row, space-evenly, center);
+    @include minSize(10rem, 3rem);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 1s;
+    cursor: pointer;
+    &:hover { box-shadow: rgba(0, 0, 0, 0.4) 0px 4.5px 9.5px; }
+}
+
+.arrow {
+    //border: 1px solid red;
+    @include minSize(1.2rem, 1.6rem);
+    .line {
+        position: absolute;
+        background: $theme-color1;
+    }
+    .line1 {
+        width: 12%;
+        padding: 1px;
+        top: 50%;
+    }
+    .line2 {
+        height: 16%;
+        padding: 1px;
+        top: 38%;
+        right: 7%;
+        transform: rotate(-45deg);
+    }
+    .line3 {
+        height: 16%;
+        padding: 1px;
+        top: 50%;
+        right: 7%;
+        transform: rotate(45deg);
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .button {
+        font-size: smaller;
+    }
+}

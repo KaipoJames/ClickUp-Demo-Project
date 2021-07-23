@@ -14,9 +14,9 @@ header {
         .nav {
             width: 48%;
             position: relative;
-            right: 2rem;
+            right: 8%;
             ul {
-                @include flex(row, space-evenly, center);  
+                @include flex(row, space-evenly, center); 
             }
         }
 
@@ -25,4 +25,13 @@ header {
             left: 5rem;
         }
     }
+}
+
+@media screen and (max-width: 925px) {
+    header { .top  { .nav { right: 2%; } } }
+}
+@media screen and (max-width: 780px) {
+    header { .top  { 
+        .nav { font-size: smaller; } 
+    } }
 }
