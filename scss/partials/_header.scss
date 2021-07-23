@@ -1,0 +1,28 @@
+header {
+    @include flex(row, center, center);
+    min-height: 20vh;
+
+    .top {
+        width: 60%;
+        height: 50%;
+        @include flex(row, space-between, center);
+
+        .logo {
+            margin-bottom: 1rem;
+        }
+
+        .nav {
+            width: 48%;
+            position: relative;
+            right: 2rem;
+            ul {
+                @include flex(row, space-evenly, center);  
+            }
+        }
+
+        .button {
+            position: relative;
+            left: 5rem;
+        }
+    }
+}

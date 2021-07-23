@@ -1,0 +1,119 @@
+//VARIABLES
+$theme-color1: #9C69E2;
+$theme-color2: #ED63B8;
+
+$card-color-1: #68C9BA;
+$card-color-2: #9C69E2;
+$card-color-3: #F063B8;
+$card-color-4: #2D9CDB;
+
+$text-color: #4B5D68;
+$bold-text-color: #212353;
+
+// MIX INS
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin absolute($top, $left, $right, $bottom) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    bottom: $bottom;
+    right: $right;
+}
+@mixin text($size, $color, $weight) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+}
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+@mixin minSize($width, $height) {
+    min-width: $width;
+    min-height: $height;
+}
+@mixin maxSize($width, $height) {
+    max-width: $width;
+    max-height: $height;
+}
+
+
+// Global Layout
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url('/fonts/avenir_ff/AvenirLTStd-Black.otf') format('opentype'),
+         url('/fonts/avenir_ff/AvenirLTStd-Book.otf') format('opentype'),
+         url('/fonts/avenir_ff/AvenirLTStd-Roman.otf') format('opentype');
+  } 
+#body {
+    display: grid;
+    grid-template-areas: "header"
+                        "main"
+                        "footer";
+    color: $text-color;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: 'Avenir', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Helvetica, sans-serif;
+}
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: $text-color;
+}
+.active {
+    color: $bold-text-color;
+    font-weight: bold;
+}
+
+// Global Classes
+.logo {
+    @include flex(row, space-between, flex-end);
+    @include size(7%, 70%);
+    min-width: 40px;
+    .rect1 {
+        background: $theme-color1;
+        @include size(30%, 50%);
+        max-height: 15px;
+        min-width: 15px;
+        border-radius: 50%;
+    }
+    .rect2 {
+        border-radius: 10px;
+        background: $theme-color2;
+        @include size(30%, 70%);
+        min-height: 25px;
+        min-width: 15px;
+    }
+}
+.button {
+    @include flex(row, space-evenly, center);
+    @include minSize(10rem, 3rem);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
