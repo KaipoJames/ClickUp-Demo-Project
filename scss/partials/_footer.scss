@@ -1,0 +1,28 @@
+footer {
+    .top {
+        min-height: 30vh;
+        @include flex(row, space-evenly, flex-start);
+        h2, p {
+            margin-left: 33%;
+        }
+        .buttons {
+            @include flex(row, space-evenly, flex-start);
+        }
+    }
+    .bottom {
+        min-height: 50vh;
+        width: 80%;
+        margin-left: 13%;
+        @include flex(row, space-evenly, flex-start);
+        .logo-container {
+            @include flex(row, space-evenly, flex-start); 
+        }
+        .box {
+            min-height: 15rem;
+            @include flex(column, flex-start, flex-start);
+            * > {
+                padding: 0.5rem 0;
+            }
+        }
+    }
+}
