@@ -298,7 +298,7 @@ header .top .button {
   margin-top: 1.5%;
 }
 
-.hero .container .button h4 {
+.hero .container .button h4 a {
   color: white;
 }
 

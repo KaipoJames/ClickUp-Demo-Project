@@ -18,7 +18,9 @@
         .button {
             background: $theme-color1;
             h4 {
-                color: white;
+                a {
+                    color: white;
+                }
             }
             margin-top: 1.5%;
         }
