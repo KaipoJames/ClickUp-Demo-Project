@@ -27,33 +27,32 @@
     transition: all 1s;
     cursor: pointer;
     &:hover { box-shadow: rgba(0, 0, 0, 0.4) 0px 4.5px 9.5px; }
-}
-
-.arrow {
-    //border: 1px solid red;
-    @include minSize(1.2rem, 1.6rem);
-    .line {
-        position: absolute;
-        background: $theme-color1;
-    }
-    .line1 {
-        width: 12%;
-        padding: 1px;
-        top: 50%;
-    }
-    .line2 {
-        height: 16%;
-        padding: 1px;
-        top: 38%;
-        right: 7%;
-        transform: rotate(-45deg);
-    }
-    .line3 {
-        height: 16%;
-        padding: 1px;
-        top: 50%;
-        right: 7%;
-        transform: rotate(45deg);
+    .arrow {
+        //border: 1px solid red;
+        @include minSize(1.2rem, 1.6rem);
+        .line {
+            position: absolute;
+            background: $theme-color1;
+        }
+        .line1 {
+            width: 12%;
+            padding: 1px;
+            top: 50%;
+        }
+        .line2 {
+            height: 16%;
+            padding: 1px;
+            top: 38%;
+            right: 7%;
+            transform: rotate(-45deg);
+        }
+        .line3 {
+            height: 16%;
+            padding: 1px;
+            top: 50%;
+            right: 7%;
+            transform: rotate(45deg);
+        }
     }
 }
 

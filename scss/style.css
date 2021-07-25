@@ -127,23 +127,23 @@ a {
           box-shadow: rgba(0, 0, 0, 0.4) 0px 4.5px 9.5px;
 }
 
-.arrow {
+.button .arrow {
   min-width: 1.2rem;
   min-height: 1.6rem;
 }
 
-.arrow .line {
+.button .arrow .line {
   position: absolute;
   background: #9C69E2;
 }
 
-.arrow .line1 {
+.button .arrow .line1 {
   width: 12%;
   padding: 1px;
   top: 50%;
 }
 
-.arrow .line2 {
+.button .arrow .line2 {
   height: 16%;
   padding: 1px;
   top: 38%;
@@ -152,7 +152,7 @@ a {
           transform: rotate(-45deg);
 }
 
-.arrow .line3 {
+.button .arrow .line3 {
   height: 16%;
   padding: 1px;
   top: 50%;
@@ -295,8 +295,11 @@ header .top .button {
 
 .hero .container .button {
   background: #9C69E2;
-  color: white;
   margin-top: 1.5%;
+}
+
+.hero .container .button h4 {
+  color: white;
 }
 
 .hero .image1 {
@@ -332,7 +335,8 @@ header .top .button {
 }
 
 #about .container {
-  width: 60%;
+  width: 68%;
+  margin-left: 8%;
   min-height: 40vh;
   padding: 1.5% 0;
   display: -ms-grid;
@@ -375,5 +379,308 @@ header .top .button {
 #about .container .image2 img {
   width: 100%;
   height: auto;
+}
+
+#features, #features .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#features {
+  padding-top: 3rem;
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#features .top {
+  min-height: 20vh;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+#features .top h3 {
+  font-size: 1.8vw;
+}
+
+#features .top p {
+  width: 60%;
+}
+
+#features .grid {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  grid-gap: 1.5rem;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+#features .grid .card {
+  font-size: 1.4vw;
+  position: relative;
+  padding: 1rem 1rem 1rem 5rem;
+  border-radius: 20px;
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 50%;
+  min-height: 18rem;
+}
+
+#features .grid .card p {
+  font-size: 1vw;
+  width: 80%;
+}
+
+#features .grid .card .image {
+  position: absolute;
+  left: -25%;
+  width: 50%;
+  height: auto;
+}
+
+#features .grid .card .image img {
+  width: 100%;
+  height: auto;
+}
+
+#features .grid .card .button {
+  position: relative;
+}
+
+#features .grid .card .button .arrow .line2, #features .grid .card .button .arrow .line3 {
+  right: 11%;
+}
+
+#features .grid .card1 {
+  background: #F0FAF8;
+}
+
+#features .grid .card2 {
+  background: #F5F0FC;
+}
+
+#features .grid .card3 {
+  background: #FCF0F8;
+}
+
+#features .grid .card4 {
+  background: #EAF5FB;
+}
+
+#features .grid .card1, #features .grid .card3 {
+  left: 28%;
+}
+
+#testimonials {
+  padding-top: 2%;
+  min-height: 80vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#testimonials .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 68%;
+  margin-left: 8%;
+  min-height: 55vh;
+  padding: 2.5% 2.5%;
+  background: #9C69E2;
+  border-radius: 20px;
+  position: relative;
+}
+
+#testimonials .container h3 {
+  color: #FFF;
+  font-size: 2.2vw;
+  margin-left: 3%;
+}
+
+#testimonials .container .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+#testimonials .container .cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 45%;
+  height: 25%;
+  border-radius: 20px;
+  padding: 2rem;
+  background: white;
+}
+
+#testimonials .container .cards .card .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#testimonials .container .cards .card .image img {
+  width: 100%;
+  height: auto;
+}
+
+#testimonials .container .cards .card .text {
+  font-size: 1.1vw;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-ecenly;
+      -ms-flex-pack: space-ecenly;
+          justify-content: space-ecenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#testimonials .container .cards .card .text span, #testimonials .container .cards .card .text h4 {
+  padding: 0.1rem 0;
+}
+
+#testimonials .container .cards .card .text p {
+  padding: 0.3rem 0;
+}
+
+#testimonials .container .cards .card2 {
+  background: -webkit-gradient(linear, left top, right top, from(white), to(#9C69E2));
+  background: linear-gradient(to right, white, #9C69E2);
+}
+
+#testimonials .container .cycles {
+  position: absolute;
+  width: auto;
+  bottom: 12%;
+  left: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#testimonials .container .cycles div:first-child {
+  width: 6px;
+  height: 6px;
+  background: #ED63B8;
+}
+
+#testimonials .container .cycles div {
+  width: 3px;
+  height: 3px;
+  background: #FFF;
+  margin: 0.2rem;
+  border-radius: 50%;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

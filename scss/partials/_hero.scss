@@ -17,7 +17,9 @@
         }
         .button {
             background: $theme-color1;
-            color: white;
+            h4 {
+                color: white;
+            }
             margin-top: 1.5%;
         }
     }

@@ -1,0 +1,71 @@
+#features, #features .top {
+    @include flex(column, space-evenly, center);
+}
+#features {
+    padding-top: 3rem;
+    min-height: 90vh;
+    @include flex(column, space-evenly, center);
+    .top {
+        min-height: 20vh;
+        padding: 0.5rem;
+        text-align: center;
+        h3 {
+            font-size: 1.8vw;
+        }
+        p {
+            width: 60%;
+        }
+    }
+    .grid {
+        display: grid;
+        place-items: center;
+        grid-gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        .card {
+            font-size: 1.4vw;
+            position: relative;
+            padding: 1rem 1rem 1rem 5rem;
+            border-radius: 20px;
+            border-top-left-radius: 40%;
+            border-bottom-left-radius: 5vw;
+            @include flex(column, space-evenly, flex-start);
+            width: 50%;
+            min-height: 18rem;
+            p {
+                font-size: 1vw;
+                width: 80%;
+            }
+            .image {
+                position: absolute;
+                left: -25%;
+                @include size(50%, auto);
+                img {
+                    @include size(100%, auto);
+                }
+            }
+            .button {
+                position: relative;
+                .arrow {
+                    .line2, .line3 {
+                        right: 11%;
+                    }
+                }
+            }
+        }
+        .card1 {
+            background: $card-color-1;
+        }
+        .card2 {
+            background: $card-color-2;
+        }
+        .card3 {
+            background: $card-color-3;
+        }
+        .card4 {
+            background: $card-color-4;
+        }
+        .card1, .card3 {
+            left: 28%;
+        }
+    }
+}

@@ -1,0 +1,82 @@
+#testimonials {
+    padding-top: 2%;
+    min-height: 80vh;
+    width: 100%;
+    @include flex(row, center, center);
+    .container {
+        @include flex(column, space-evenly, flex-start);
+        width: 68%;
+        margin-left: 8%;
+        min-height: 55vh;
+        padding: 2.5% 2.5%;
+        background: $theme-color1;
+        border-radius: 20px;
+        position: relative;
+
+        h3 {
+            color: #FFF;
+            font-size: 2.2vw;
+            margin-left: 3%;
+        }
+
+        .cards {
+            @include flex(row, space-evenly, center);
+            width: 100%;
+            .card {
+                @include flex(row, space-evenly, flex-start);
+                @include size(45%, 25%);
+                border-radius: 20px;
+                padding: 2rem;
+                background: white;
+                .image {
+                    @include flex(row, center, center);
+                    @include size(4rem, 4rem);
+                    border-radius: 50%;
+                    overflow: hidden;
+                    img {
+                        @include size(100%, auto); 
+                    }
+                }
+                .text {
+                    font-size: 1.1vw;
+                    width: 60%;
+                    @include flex(column, space-ecenly, flex-start);
+                    span, h4 {
+                        padding: 0.1rem 0;
+                    }
+                    p {
+                        padding: 0.3rem 0;
+                    }
+                }
+            }
+            .card2 {
+                background: linear-gradient(to right,
+                    white,
+                    $theme-color1
+                );
+            }
+
+        }
+
+        .cycles {
+            position: absolute;
+            width: auto;
+            bottom: 12%;
+            left: 7%;
+            @include flex(row, space-evenly, center);
+            div:first-child {
+                @include size(6px, 6px);
+                background: $theme-color2;
+            }
+            div {
+                @include size(3px, 3px);
+                background: #FFF;
+                margin: 0.2rem;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+
+
+    }
+}
